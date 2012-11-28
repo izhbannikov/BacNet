@@ -1,7 +1,7 @@
-setwd("~/Dropbox/cs576_project/pubmed/")
+setwd("~/BacNet/")
 library(igraph)
 
-network_data<-read.csv("adj_matrix_strong.csv", header = T, stringsAsFactors=F, sep=",")
+network_data<-read.csv("adj_matrix_12.csv", header = T, stringsAsFactors=F, sep=",")
 network_data <- network_data[,2:ncol(network_data)]
 names(network_data)
 
